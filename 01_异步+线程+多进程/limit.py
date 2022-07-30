@@ -10,7 +10,7 @@ def task(process_num):
     check_response(process_num)
 
 
-if __name__ == "__main__":
+def all():
     start_time = time.time()
     t1 = Process(target=task, args=(1,))
     t2 = Process(target=task, args=(2,))
@@ -22,3 +22,9 @@ if __name__ == "__main__":
     t2.join()
     t3.join()
     print(f"共花费时间：{time.time()-start_time}s")
+
+
+if __name__ == "__main__":
+    t = Process(target=all)
+    t.start()
+    t.join()

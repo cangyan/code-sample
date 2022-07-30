@@ -1,6 +1,7 @@
 import asyncio
 import time
 
+
 def write_mail(number):
     print(f"写信(第{number}封)：程序员充电站")
     time.sleep(1)

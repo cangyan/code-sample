@@ -1,6 +1,8 @@
-import time
 import threading
-from common import write_mail, send_mail, check_response
+import time
+
+from common import check_response, send_mail, write_mail
+
 
 def task(thread_num):
     write_mail(thread_num)

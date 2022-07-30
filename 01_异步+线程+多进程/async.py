@@ -1,6 +1,8 @@
 import asyncio
 import time
-from common import write_mail, async_send_mail, check_response
+
+from common import async_send_mail, check_response, write_mail
+
 
 async def task():
     # 同步处理
