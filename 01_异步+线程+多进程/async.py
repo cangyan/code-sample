@@ -20,7 +20,6 @@ async def task():
     check_response(2)
     check_response(3)
 
-
 if __name__ == '__main__':
     start_time = time.time()
     asyncio.run(task())
